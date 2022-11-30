@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    
+}
+.split{
+    
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+
+.split.left{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+background-size: 50%;
+
+height: 100%;
+background-size: cover;
+width: 50%;
+background:linear-gradient(rgba(103, 96, 148, 0.8),rgba(21, 0, 162, 0.8)), url(/assets/PS5-4.jpg) center no-repeat ;
+}
+.split.left::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.split.left::before{
+    position: absolute;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.split.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+width: 50%;
+background-size: cover;
+height: 100%;
+
+background:linear-gradient(rgba(27, 28, 29, 0.801),rgba(10, 10, 10, 0.8)), url(/assets/Xbox-Series-X.jpg) center no-repeat ;
+}
+h1{
+    bottom: 10%;
+   position: relative;
+    color: white;
+    
+    font-size: 4rem;
+
+}
+.btn{
+    position: relative;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    border: solid 3px white;
+    padding: 1.5rem;
+    width: 12rem;
+    text-transform: uppercase;
+    /* transform: translateX(-50%); */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.hover-left .left{
+width: 90%;
+/* background-size: contain; */
+transition: 3s;
+}
+
+
+.hover-right .right{
+    width: 90%;
+    transition: 3s;
+    /* background-size: contain; */
+}
+
+/* .split.right:hover{
+    width: 110%;
+    height: 100%; pasamos del 50% al 100%
+    
+    transition-duration: 2s;
+
+}
+
+.split.left:hover{
+    width: 97%;
+    height: 100%; pasamos del 50% al 100%
+    
+    transition-duration: 2s;
+
+} */
+
+
+
+
